@@ -1,1 +1,1 @@
-# Implementation of MSDC
+# Multi-Scale Deformable Convolution Implementation
