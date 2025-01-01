@@ -193,7 +193,6 @@ def rate_distortion_loss(y_true, y_pred):
     
     def Rate(y_true, y_pred):
         # Assuming rate is proportional to the number of non-zero elements in y_pred
-        # You might have a more complex calculation based on your actual compression method
         non_zero_elements = tf.math.count_nonzero(y_pred)
         # print(tf.cast(tf.size(y_pred), tf.int32).dtype)
         rate = non_zero_elements / tf.cast(tf.size(y_pred), tf.int64)
